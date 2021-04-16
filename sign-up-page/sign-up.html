@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Page</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="../style/signUp-style.css">
 
 </head>
@@ -15,8 +15,9 @@
         <h1>CompanyName.</h1>
         <div class="contentList">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="../home-page.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Service</a></li>
             </ul>
         </div>
@@ -42,16 +43,16 @@
             <br>
             <p>Already Have an Account ?</p>
             <br>
-            <div class="log-in">
+            <!-- <div class="log-in">
                 <a id="logIn-link"href="../login-page.html">Log In</a>
-            </div>
+            </div> -->
+            <button class="login-btn" onClick="javascript:window.open('../log-in-page/login-page.html', '_self');">Log In</button>
         </div>
     </div>
 
     <!-- footer -->
-    <div class="foot-container">
+    <div class="foot-container" id="about">
         <h2>CompanyName.</h2>
-        <br>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         <p>Fuga dolores molestiae dolorem numquam. Officiis reiciendis</p> 
         <p>quam animi modi consequatur, ratione perspiciatis quia illum</p> 

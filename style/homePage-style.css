@@ -49,6 +49,7 @@ table {
     box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+    font-family: sans-serif;
 }
 
 p {
@@ -107,129 +108,49 @@ body {
 	opacity: 50%;
 }
 
-/* Login Container */
+/* container */
 
-.login-container {
-	width: 400px;
-	height: 500px;
-	background: white;
-	margin: 30px auto;
-	border-radius: 2%;
-	
+    /* content */
+.container {
+    width: 95%;
+    height: 600px;
+    margin: 15px auto;
+    background: white;
+    border-radius: 10px;
 }
 
-.login-item h2 {
-	font-family: sans-serif;
-    padding-top: 20px;
-    margin-bottom: 30px;
-	font-size: 20px;
-	font-weight: bold;
-	color:black; 	
+.login-btn {
+    position: relative;
+    top: 20px;
+    right: -900px;
 }
 
-.login-item {
-	display: block;
-	text-align: center;
-	box-sizing: border-box;
+.signup-btn {
+    position: relative;
+    top: 20px;
+    right: -920px;
 }
 
-.login-item .inp {
-	font-size: 15px;
-	text-indent: 10px;
-	margin-bottom: 10px;
-	border: none;
-	border-bottom: 1px solid black;
-}
-
-.login-item .fullName, .lastName {
+.btn-style {
+    outline-style: none;
+    border: none;
+    width: 120px;
     height: 40px;
-    width: 170px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    background: #FFB226;
+    border-radius: 20px;
 }
 
-.login-item .fullName {
-    margin-right: 10px;
-    margin-left: 10px;
+.btn-style:hover {
+    background: #fdbf4c;
 }
 
-.login-item .lastName {
-    margin-right: 10px;
+.btn-style:active {
+    background: black;
 }
-
-.login-item .username, .password, .email{
-    width: 350px;
-	height: 40px;
-}
-
-#remember-me {
-	position: relative;
-	top: 1.5px;
-	right: 3px;
-}
-
-.login-item .submit-btn {
-	width: 350px;
-	height: 45px;
-	margin-top: 10px;
-	font-size: 15px;
-	font-weight: bold;
-	color: white;
-	background: #FFB226;
-	border: none;
-}
-
-.login-item .submit-btn:hover {
-	background: #fdbf4c;
-}
-
-.login-item .submit-btn:active {
-	background: black;
-
-}
-
-.login-item .login-btn {
-	background: #FFB226;
-	width: 350px;
-	height: 45px;
-	outline-style: none;
-	border: none;
-	font-family: sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-	color: white;
-}
-
-.login-item .login-btn:hover {
-	background: #fdbf4c;
-}
-
-.login-item .login-btn:active {
-	background: black;
-}
-
-/* .login-item .log-in{
-	background: #FFB226;
-	width: 350px;
-	height: 45px;
-	margin: 0px auto;
-}
-
-.log-in a {
-	text-decoration: none;
-	font-family: sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-	line-height: 45px;
-	color: white;
-}
-
-.log-in:hover {
-	background: #ffbb3c;
-}
-
-.log-in:active{
-	background: black;
-
-} */
 
 /* footer */
 .foot-container {

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In Page</title>
-    <link rel="stylesheet" href="style/loginPage-style.css">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../style/loginPage-style.css">
 
 </head>
 <body>
@@ -15,8 +15,9 @@
         <h1>CompanyName.</h1>
         <div class="contentList">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="../home-page.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Service</a></li>
             </ul>
         </div>
@@ -32,26 +33,22 @@
                 <br>
                 <input placeholder="Password"type="password" name="" id="" class="password-inp">
                 <br>
-                <!-- <input type="checkbox" name="" id="checkbox" class="checkbox-inp"><label for="">Remember Me</label> -->
                 <label for="remember-me" class="checkbox-label">
                     <input type="checkbox" name="" id="remember-me">Remember Me
                 </label>
                 <br>
-                <button class="submit-btn">Log In</button> 
+                <button class="submit-btn" type="submit" >Log In</button> 
             </form>
             <br>
             <p>OR</p>
             <br>
-            <div class="sign-up">
-                <a id="signUp-link"href="sign-up-page/sign-up.html">Sign up</a>
-            </div>
+            <button class="signup-btn" onClick="javascript:window.open('../sign-up-page/sign-up.html', '_self');">Sign Up</button>
         </div>
     </div>
 
     <!-- footer -->
-    <div class="foot-container">
+    <div class="foot-container" id="about">
         <h2>CompanyName.</h2>
-        <br>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         <p>Fuga dolores molestiae dolorem numquam. Officiis reiciendis</p> 
         <p>quam animi modi consequatur, ratione perspiciatis quia illum</p> 
@@ -61,5 +58,6 @@
         <p class="copyright">Copyright &copy; 2021 CompanyName. Made by Hanif</p>
 
     </div>
+
 </body>
 </html>

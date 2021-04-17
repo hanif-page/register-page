@@ -61,9 +61,12 @@ button, input {
 	outline-style: none;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 
 body {
-    background-image:linear-gradient(to left, #a2f3f3, #75a3d3);
+    background-image:linear-gradient(to left, #4edfff, #5e5eff);
 }
 
 /* Navigation Bar */
@@ -104,8 +107,17 @@ body {
 
 }
 
-.navbar li a:hover {
-	opacity: 50%;
+.navbar li a:active {
+	opacity: 75%;
+}
+
+.navbar li .underline:hover {
+	border: none;
+	border-bottom: 1px solid white;
+}
+
+.navbar li .underline:active {
+	opacity: 75%;
 }
 
 /* container */
@@ -113,22 +125,56 @@ body {
     /* content */
 .container {
     width: 95%;
-    height: 600px;
+    height: 800px;
     margin: 15px auto;
-    background: white;
+    /* background: rgb(255, 193, 126); */
+	background-image: linear-gradient(to right, rgb(252, 169, 80), rgb(255, 114, 38));
     border-radius: 10px;
+	position: relative;
+}
+
+.text {
+	margin: 0 auto;
+	color: white;
+	font-family: "Arial";
+	line-height: 50px;
+	text-align: center;
+	position: relative;
+	top: 150px;
+}
+
+.text p {
+	font-size: 16px;
+}
+
+.text p span {
+	font-weight: bold;
+	color: #ffe3af;
+	font-size: 20px;
+}
+
+.container h1 {
+	font-size: 60px;
+	font-family: "Arial";
+	font-weight: bold;
+}
+
+.container h2 {
+	font-size: 40px;
+	font-family: "Arial";
+	font-weight: bold;
 }
 
 .login-btn {
-    position: relative;
-    top: 20px;
-    right: -900px;
+	position: absolute;
+	top: 20px;
+	right: 40px;
 }
 
 .signup-btn {
-    position: relative;
-    top: 20px;
-    right: -920px;
+	position: absolute;
+	top: 20px;
+	right: 180px;
 }
 
 .btn-style {
@@ -146,6 +192,7 @@ body {
 
 .btn-style:hover {
     background: #fdbf4c;
+
 }
 
 .btn-style:active {

@@ -62,7 +62,11 @@ button, input {
 
 
 body {
-    background-image:linear-gradient(to left, #a2f3f3, #75a3d3);
+    background-image:linear-gradient(to left, #4edfff, #5e5eff);
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 /* Navigation Bar */
@@ -103,8 +107,18 @@ body {
 
 }
 
-.navbar li a:hover {
-	opacity: 50%;
+.navbar li a:active {
+	opacity: 75%;
+}
+
+.navbar li .underline:hover {
+	display: inline;
+	border: none;
+	border-bottom: 1px solid white;
+}
+
+.navbar li .underline:active {
+	opacity: 75%;
 }
 
 /* Login Container */

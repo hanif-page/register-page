@@ -6,6 +6,11 @@
 	padding: 0;
 }
 
+p {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
 button, input {
 	outline-style: none;
 }
@@ -186,7 +191,6 @@ html {
 }
 
 .foot-container p {
-	font-size: 15px;
 	padding-top: 5px;
 }
 
